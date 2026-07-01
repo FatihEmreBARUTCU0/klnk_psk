@@ -14,6 +14,11 @@ const BLOG_REVALIDATE_SECONDS = 60;
 
 const blogFetchOptions = { next: { revalidate: BLOG_REVALIDATE_SECONDS } };
 
+/** Galeri içeriği için ISR — Sanity'den en geç 60 sn'de bir yenilenir */
+const GALLERY_REVALIDATE_SECONDS = 60;
+
+const galleryFetchOptions = { next: { revalidate: GALLERY_REVALIDATE_SECONDS } };
+
 export async function getRecentPosts(): Promise<Post[]> {
   if (!isSanityConfigured || !client) return [];
   try {
@@ -44,7 +49,7 @@ export async function getPostBySlug(slug: string) {
 export async function getGalleryImages(): Promise<GalleryItem[]> {
   if (!isSanityConfigured || !client) return [];
   try {
-    return await client.fetch(galleryQuery);
+    return await client.fetch(galleryQuery, {}, galleryFetchOptions);
   } catch {
     return [];
   }
