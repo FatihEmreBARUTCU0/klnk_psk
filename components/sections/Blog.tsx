@@ -43,12 +43,12 @@ export function Blog({ posts }: BlogSectionProps) {
             {[0, 1, 2].map((idx) => (
               <FadeIn key={idx} delay={0.08 * idx}>
                 <div className="premium-card overflow-hidden !p-0">
-                  <div className="skeleton-shimmer aspect-[16/10] w-full" />
+                  <div className="skeleton-static aspect-[16/10] w-full" />
                   <div className="space-y-3 p-6">
-                    <div className="skeleton-shimmer h-3 w-24 rounded-full" />
-                    <div className="skeleton-shimmer h-6 w-3/4 rounded-full" />
-                    <div className="skeleton-shimmer h-4 w-full rounded-full" />
-                    <div className="skeleton-shimmer h-4 w-5/6 rounded-full" />
+                    <div className="skeleton-static h-3 w-24 rounded-full" />
+                    <div className="skeleton-static h-6 w-3/4 rounded-full" />
+                    <div className="skeleton-static h-4 w-full rounded-full" />
+                    <div className="skeleton-static h-4 w-5/6 rounded-full" />
                   </div>
                 </div>
               </FadeIn>

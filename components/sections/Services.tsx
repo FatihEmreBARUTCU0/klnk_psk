@@ -33,6 +33,8 @@ export function Services() {
                           src={service.image}
                           alt={`${service.title} temalı görsel`}
                           fill
+                          priority={false}
+                          loading="lazy"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                         />

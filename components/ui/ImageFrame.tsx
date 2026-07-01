@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface ImageFrameProps {
@@ -17,11 +14,7 @@ export function ImageFrame({
   children,
 }: ImageFrameProps) {
   return (
-    <motion.div
-      animate={{ y: [0, -8, 0] }}
-      transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-      className={cn("relative", className)}
-    >
+    <div className={cn("relative", className)}>
       <div
         className={cn(
           "absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-accent/30 via-accent-2/20 to-transparent blur-md",
@@ -44,6 +37,6 @@ export function ImageFrame({
           </div>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }

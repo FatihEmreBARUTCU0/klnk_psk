@@ -12,7 +12,7 @@ interface FadeInProps {
 }
 
 const transition: Transition = {
-  duration: 0.7,
+  duration: 0.4,
   ease: [0.22, 1, 0.36, 1],
 };
 

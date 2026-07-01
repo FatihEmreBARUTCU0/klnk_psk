@@ -27,9 +27,9 @@ export function GalleryGrid({ images }: GalleryGridProps) {
         {[0, 1, 2].map((idx) => (
           <FadeIn key={idx} delay={0.08 * idx}>
             <div className="premium-card overflow-hidden !p-0">
-              <div className="skeleton-shimmer aspect-square w-full min-[560px]:aspect-[4/3]" />
+              <div className="skeleton-static aspect-square w-full min-[560px]:aspect-[4/3]" />
               <div className="p-4">
-                <div className="skeleton-shimmer h-4 w-2/3 rounded-full" />
+                <div className="skeleton-static h-4 w-2/3 rounded-full" />
               </div>
             </div>
           </FadeIn>

@@ -28,7 +28,7 @@
       #8fb3ae
     );
     background-size: 400% 400%;
-    animation: hero-gradient-shift 8s ease-in-out infinite;
+    animation: hero-gradient-shift 12s ease-in-out infinite;
   }
 
   ::selection {
@@ -111,21 +111,8 @@
     @apply w-full;
   }
 
-  .skeleton-shimmer {
-    background: linear-gradient(
-      110deg,
-      rgba(255, 255, 255, 0.18) 8%,
-      rgba(255, 255, 255, 0.35) 18%,
-      rgba(255, 255, 255, 0.18) 33%
-    );
-    background-size: 220% 100%;
-    animation: skeleton-shimmer 1.8s ease-in-out infinite;
-  }
-
-  @keyframes skeleton-shimmer {
-    to {
-      background-position-x: -220%;
-    }
+  .skeleton-static {
+    @apply bg-white/60;
   }
 }
 
