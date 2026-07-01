@@ -9,10 +9,15 @@ import {
 } from "@/sanity/lib/queries";
 import { isSanityConfigured } from "@/sanity/env";
 
+/** Blog içeriği için ISR — Sanity'den en geç 60 sn'de bir yenilenir */
+const BLOG_REVALIDATE_SECONDS = 60;
+
+const blogFetchOptions = { next: { revalidate: BLOG_REVALIDATE_SECONDS } };
+
 export async function getRecentPosts(): Promise<Post[]> {
   if (!isSanityConfigured || !client) return [];
   try {
-    return await client.fetch(recentPostsQuery);
+    return await client.fetch(recentPostsQuery, {}, blogFetchOptions);
   } catch {
     return [];
   }
@@ -21,7 +26,7 @@ export async function getRecentPosts(): Promise<Post[]> {
 export async function getAllPosts(): Promise<Post[]> {
   if (!isSanityConfigured || !client) return [];
   try {
-    return await client.fetch(postsQuery);
+    return await client.fetch(postsQuery, {}, blogFetchOptions);
   } catch {
     return [];
   }
@@ -30,7 +35,7 @@ export async function getAllPosts(): Promise<Post[]> {
 export async function getPostBySlug(slug: string) {
   if (!isSanityConfigured || !client) return null;
   try {
-    return await client.fetch(postBySlugQuery, { slug });
+    return await client.fetch(postBySlugQuery, { slug }, blogFetchOptions);
   } catch {
     return null;
   }
