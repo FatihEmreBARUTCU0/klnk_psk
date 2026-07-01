@@ -8,6 +8,7 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 export default defineConfig({
   name: "default",
   title: "Zeynep — Klinik Psikolog",
+  basePath: "/studio",
   projectId,
   dataset,
   plugins: [structureTool()],
