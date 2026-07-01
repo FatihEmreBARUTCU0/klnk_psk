@@ -92,6 +92,8 @@ export const services = [
   {
     title: "Anksiyete",
     icon: "brain" as const,
+    image:
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
     description:
       "Kaygı bozuklukları, panik atak ve sosyal anksiyete ile başa çıkma stratejileri geliştirme.",
     items: ["Panik Bozukluk", "Yaygın Anksiyete", "Sosyal Fobi"],
@@ -99,6 +101,8 @@ export const services = [
   {
     title: "Depresyon",
     icon: "heart" as const,
+    image:
+      "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=1200&q=80",
     description:
       "Duygudurum bozuklukları, motivasyon kaybı ve yaşam doyumu konularında destek.",
     items: ["Majör Depresyon", "Distimi", "Mevsimsel Depresyon"],
@@ -106,6 +110,8 @@ export const services = [
   {
     title: "İlişki Sorunları",
     icon: "users" as const,
+    image:
+      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=80",
     description:
       "İletişim güçlükleri, bağlanma sorunları ve ilişki dinamiklerini anlama.",
     items: ["Çift Terapisi", "Bağlanma", "İletişim"],
@@ -113,6 +119,8 @@ export const services = [
   {
     title: "Kişilik",
     icon: "sparkles" as const,
+    image:
+      "https://images.unsplash.com/photo-1488953348951-d465fedacbc3?auto=format&fit=crop&w=1200&q=80",
     description:
       "Kişilik bozuklukları, öz-değer ve kimlik gelişimi üzerine terapötik çalışma.",
     items: ["Borderline", "Narsisistik", "Kaçıngan"],

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Brain, Heart, Users, Sparkles } from "lucide-react";
 import { services } from "@/lib/constants";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -26,6 +27,17 @@ export function Services() {
               <FadeIn key={service.title} delay={i * 0.08}>
                 <div className="premium-card h-full">
                   <div className="relative z-10">
+                    <div className="mb-5 overflow-hidden rounded-xl">
+                      <div className="relative aspect-video">
+                        <Image
+                          src={service.image}
+                          alt={`${service.title} temalı görsel`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                        />
+                      </div>
+                    </div>
                     <div className="mb-5 inline-flex rounded-full border border-accent-2/20 bg-accent-2/10 p-3 text-accent-2">
                       <Icon size={20} strokeWidth={1.5} />
                     </div>

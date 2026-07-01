@@ -79,7 +79,7 @@ export function Hero() {
           initial={{ opacity: 0, x: -48 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.85, delay: 0.6, ease }}
-          className="mx-auto w-full max-w-sm lg:max-w-none"
+          className="order-last mx-auto mt-2 w-full max-w-[12rem] lg:order-none lg:mt-0 lg:max-w-none"
         >
           <ImageFrame aspect="hero" label="Profil fotoğrafı" />
         </motion.div>
