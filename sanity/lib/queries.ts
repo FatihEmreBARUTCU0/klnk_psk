@@ -30,5 +30,6 @@ export const galleryQuery = `*[_type == "galleryImage"] | order(order asc) {
   _id,
   image,
   alt,
+  caption,
   order
 }`;

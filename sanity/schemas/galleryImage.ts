@@ -16,6 +16,14 @@ export const galleryImage = defineType({
       name: "alt",
       title: "Alternatif Metin",
       type: "string",
+      description: "Erişilebilirlik için kısa görsel tanımı (ekranda görünmez).",
+    }),
+    defineField({
+      name: "caption",
+      title: "Açıklama",
+      type: "text",
+      rows: 2,
+      description: "Görselin altında gösterilecek kısa açıklama (isteğe bağlı).",
     }),
     defineField({
       name: "order",
@@ -25,6 +33,12 @@ export const galleryImage = defineType({
     }),
   ],
   preview: {
-    select: { title: "alt", media: "image" },
+    select: { title: "caption", subtitle: "alt", media: "image" },
+    prepare({ title, subtitle, media }) {
+      return {
+        title: title || subtitle || "Galeri görseli",
+        media,
+      };
+    },
   },
 });

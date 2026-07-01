@@ -11,6 +11,7 @@ export interface GalleryItem {
   _id: string;
   image: { asset: { _ref: string } };
   alt?: string;
+  caption?: string;
   order?: number;
 }
 
@@ -43,19 +44,26 @@ export function GalleryGrid({ images }: GalleryGridProps) {
       <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
         {images.map((item, i) => (
           <FadeIn key={item._id} delay={i * 0.05}>
-            <button
-              type="button"
-              onClick={() => setSelected(item)}
-              className="group mb-4 block w-full overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-accent"
-            >
-              <Image
-                src={urlFor(item.image).width(600).url()}
-                alt={item.alt || "Galeri görseli"}
-                width={600}
-                height={400}
-                className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </button>
+            <figure className="mb-4 break-inside-avoid">
+              <button
+                type="button"
+                onClick={() => setSelected(item)}
+                className="group block w-full overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-accent"
+              >
+                <Image
+                  src={urlFor(item.image).width(600).url()}
+                  alt={item.alt || item.caption || "Galeri görseli"}
+                  width={600}
+                  height={400}
+                  className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </button>
+              {item.caption && (
+                <figcaption className="mt-3 px-1 text-sm leading-relaxed text-muted">
+                  {item.caption}
+                </figcaption>
+              )}
+            </figure>
           </FadeIn>
         ))}
       </div>
@@ -86,11 +94,16 @@ export function GalleryGrid({ images }: GalleryGridProps) {
             >
               <Image
                 src={urlFor(selected.image).width(1200).url()}
-                alt={selected.alt || "Galeri görseli"}
+                alt={selected.alt || selected.caption || "Galeri görseli"}
                 width={1200}
                 height={800}
                 className="max-h-[90vh] w-auto object-contain"
               />
+              {selected.caption && (
+                <p className="bg-text/90 px-5 py-3 text-center text-sm leading-relaxed text-white/90">
+                  {selected.caption}
+                </p>
+              )}
             </motion.div>
           </motion.div>
         )}
