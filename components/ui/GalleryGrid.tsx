@@ -41,10 +41,10 @@ export function GalleryGrid({ images }: GalleryGridProps) {
 
   return (
     <>
-      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+      <div className="flex flex-col gap-10 md:block md:columns-2 md:gap-4 lg:columns-3">
         {images.map((item, i) => (
-          <FadeIn key={item._id} delay={i * 0.05}>
-            <figure className="mb-4 break-inside-avoid">
+          <FadeIn key={item._id} delay={i * 0.05} className="w-full">
+            <figure className="break-inside-avoid md:mb-4">
               <button
                 type="button"
                 onClick={() => setSelected(item)}
@@ -59,7 +59,7 @@ export function GalleryGrid({ images }: GalleryGridProps) {
                 />
               </button>
               {item.caption && (
-                <figcaption className="mt-3 px-1 text-sm leading-relaxed text-muted">
+                <figcaption className="mt-4 mb-2 px-1 pb-1 text-sm leading-relaxed text-muted md:mt-3 md:mb-0 md:pb-0">
                   {item.caption}
                 </figcaption>
               )}
