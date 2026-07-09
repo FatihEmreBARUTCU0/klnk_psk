@@ -41,21 +41,21 @@ export function GalleryGrid({ images }: GalleryGridProps) {
 
   return (
     <>
-      <div className="flex flex-col gap-10 md:block md:columns-2 md:gap-4 lg:columns-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
         {images.map((item, i) => (
           <FadeIn key={item._id} delay={i * 0.05} className="w-full">
-            <figure className="break-inside-avoid md:mb-4">
+            <figure className="md:mb-0">
               <button
                 type="button"
                 onClick={() => setSelected(item)}
-                className="group block w-full overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-accent"
+                className="group block w-full overflow-hidden rounded-xl aspect-[4/3] focus:outline-none focus:ring-2 focus:ring-accent"
               >
                 <Image
                   src={urlFor(item.image).width(600).url()}
                   alt={item.alt || item.caption || "Galeri görseli"}
                   width={600}
                   height={400}
-                  className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </button>
               {item.caption && (
