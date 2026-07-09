@@ -9,15 +9,11 @@ import {
 } from "@/sanity/lib/queries";
 import { isSanityConfigured } from "@/sanity/env";
 
-/** Blog içeriği için ISR — Sanity'den en geç 60 sn'de bir yenilenir */
-const BLOG_REVALIDATE_SECONDS = 60;
+/** İçerik tazeliği öncelikli: her istekte güncel veriyi çek */
+const blogFetchOptions = { cache: "no-store" as const };
 
-const blogFetchOptions = { next: { revalidate: BLOG_REVALIDATE_SECONDS } };
-
-/** Galeri içeriği için ISR — Sanity'den en geç 60 sn'de bir yenilenir */
-const GALLERY_REVALIDATE_SECONDS = 60;
-
-const galleryFetchOptions = { next: { revalidate: GALLERY_REVALIDATE_SECONDS } };
+/** İçerik tazeliği öncelikli: her istekte güncel veriyi çek */
+const galleryFetchOptions = { cache: "no-store" as const };
 
 export async function getRecentPosts(): Promise<Post[]> {
   if (!isSanityConfigured || !client) return [];

@@ -8,6 +8,9 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { getAllPosts } from "@/lib/sanity-data";
 import { siteConfig } from "@/lib/constants";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Blog",
   description: `${siteConfig.fullName} — psikoloji ve ruh sağlığı üzerine yazılar.`,

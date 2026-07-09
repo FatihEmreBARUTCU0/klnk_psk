@@ -10,6 +10,9 @@ import { Gallery } from "@/components/sections/Gallery";
 import { Contact } from "@/components/sections/Contact";
 import { getRecentPosts, getGalleryImages } from "@/lib/sanity-data";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function Home() {
   const [posts, galleryImages] = await Promise.all([
     getRecentPosts(),
