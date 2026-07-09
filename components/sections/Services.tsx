@@ -90,19 +90,6 @@ export function Services() {
                     >
                       {isExpanded ? "Daha az göster" : "Devamını oku"}
                     </button>
-                    {service.items?.length ? (
-                      <ul className="mt-5 space-y-2 border-t border-border/60 pt-4">
-                        {service.items.map((item) => (
-                          <li
-                            key={item}
-                            className="text-xs tracking-wide text-muted"
-                          >
-                            <span className="mr-2 text-accent">—</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    ) : null}
                   </div>
                 </div>
               </FadeIn>
