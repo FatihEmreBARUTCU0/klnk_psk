@@ -24,17 +24,8 @@ export function GalleryGrid({ images }: GalleryGridProps) {
 
   if (images.length === 0) {
     return (
-      <div className="grid gap-6 min-[560px]:grid-cols-2 lg:grid-cols-3">
-        {[0, 1, 2].map((idx) => (
-          <FadeIn key={idx} delay={0.08 * idx}>
-            <div className="premium-card overflow-hidden !p-0">
-              <div className="skeleton-static aspect-square w-full min-[560px]:aspect-[4/3]" />
-              <div className="p-4">
-                <div className="skeleton-static h-4 w-2/3 rounded-full" />
-              </div>
-            </div>
-          </FadeIn>
-        ))}
+      <div className="mt-6 rounded-2xl border border-dashed border-white/50 bg-white/20 px-8 py-16 text-center backdrop-blur-sm">
+        <p className="font-display text-xl text-text">Henüz görsel eklenmedi</p>
       </div>
     );
   }

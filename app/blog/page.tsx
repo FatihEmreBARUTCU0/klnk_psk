@@ -51,9 +51,6 @@ export default async function BlogPage() {
               <p className="font-display text-xl text-text">
                 Henüz blog yazısı yok
               </p>
-              <p className="mt-2 text-sm text-muted">
-                Yazılar Sanity CMS üzerinden eklendikçe burada görünecek.
-              </p>
             </div>
           )}
         </div>
