@@ -52,15 +52,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <Navbar />
       <main className="min-h-screen section-padding pt-28">
         <article className="mx-auto max-w-3xl">
-          <Link
-            href="/blog"
-            className="mb-8 inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-text"
-          >
-            <ArrowLeft size={14} />
-            Tüm Yazılar
-          </Link>
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-text"
+            >
+              <ArrowLeft size={14} />
+              Tüm Yazılar
+            </Link>
 
-          <time className="text-sm text-muted">{formattedDate}</time>
+            <time className="text-sm text-muted">{formattedDate}</time>
+          </div>
           <h1 className="mt-2 font-display text-4xl text-text md:text-5xl">
             {post.title}
           </h1>
