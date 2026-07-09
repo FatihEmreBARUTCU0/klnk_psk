@@ -27,12 +27,16 @@ export function Education() {
                     <div>
                       <span>{edu.title}</span>
                       <p className="mt-1 font-sans text-sm font-normal text-muted">
-                        {edu.institution} · {edu.duration}
+                        {edu.institution
+                          ? `${edu.institution} · ${edu.duration}`
+                          : edu.duration}
                       </p>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="leading-relaxed">{edu.description}</p>
+                    {edu.description ? (
+                      <p className="leading-relaxed">{edu.description}</p>
+                    ) : null}
                   </AccordionContent>
                 </AccordionItem>
               ))}

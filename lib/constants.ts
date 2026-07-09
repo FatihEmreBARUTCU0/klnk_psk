@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Zeynep",
-  fullName: "Zeynep [Soyad]",
+  fullName: "Zeynep Doğruel",
   title: "Klinik Psikolog | Psikoterapist",
   description:
     "Bireysel terapi ve psikolojik danışmanlık hizmetleri sunan klinik psikolog.",
@@ -19,110 +19,165 @@ export const navLinks = [
 
 export const heroText = {
   paragraph:
-    "Her bireyin kendine özgü bir hikayesi olduğuna inanıyorum. Terapi sürecinde güvenli ve yargısız bir alan sunarak, birlikte anlamlandırma ve iyileşme yolculuğuna çıkıyoruz.",
+    "Güvenli, yargısız ve anlamaya dayalı bir terapi alanında; danışanlarımın kendini keşfetme ve iyileşme yolculuğuna eşlik ediyorum.",
 };
 
 export const aboutText = {
   paragraphs: [
-    "Klinik psikolog olarak, bireylerin yaşam kalitesini artırmayı ve içsel kaynaklarını keşfetmelerine eşlik etmeyi amaçlıyorum. Akademik eğitimim ve klinik deneyimim doğrultusunda, kanıta dayalı terapi yaklaşımlarını kişiye özel bir çerçevede uyguluyorum.",
-    "Terapi odasında empati, gizlilik ve saygı temel değerlerimdir. Her danışanın benzersiz deneyimlerini anlamaya ve birlikte anlamlı bir değişim yaratmaya odaklanıyorum.",
-    "Çalışmalarımda bilişsel davranışçı terapi, şema terapi ve kabul ve kararlılık terapisi gibi yaklaşımlardan yararlanıyorum.",
+    "Ben Zeynep Doğruel. Klinik psikoloji yüksek lisansını tamamlamış bir psikolog olarak, danışanlarımla güvenli, yargısız ve anlamaya dayalı bir terapi alanı kurmayı önemsiyorum.",
+    "Psikoterapi sürecini yalnızca belirtileri azaltmaya yönelik bir çalışma olarak değil; kişinin kendini, duygularını, ilişkilerini ve tekrar eden yaşam örüntülerini daha yakından tanıdığı bir süreç olarak ele alıyorum. Çalışmalarımda integratif terapi yaklaşımını benimsiyorum. İntegratif terapi, danışanın ihtiyaçlarına göre farklı terapi ekollerinden yararlanmayı; yani tek bir kurama bağlı kalmadan, kişiye en uygun yöntemleri bir araya getirmeyi ifade eder.",
+    "Bu doğrultuda bilişsel davranışçı terapi, rasyonel duygucu davranışçı terapi, duygu odaklı terapi ve psikodinamik psikoterapi alanlarındaki eğitim ve deneyimlerimden beslenen bütüncül bir bakış açısıyla çalışıyorum.",
+    "Akademik ve klinik yolculuğum boyunca özellikle kaygı, benlik saygısı, sosyal kaygı, bilişsel çarpıtmalar, duygu düzenleme güçlükleri ve kişilerarası ilişkiler üzerine çalıştım. Yüksek lisans tez çalışmamda benlik saygısı ile sosyal kaygı arasındaki ilişkide bilişsel çarpıtmalar ve duygu düzenleme stratejilerinin rolünü inceledim.",
+    "Şu anda özel klinik çalışma alanımı oluşturarak yetişkin danışanlarla psikoterapi süreçleri yürütmeye hazırlanıyorum.",
   ],
 };
 
 export const cvTimeline = [
   {
-    year: "2020 – Günümüz",
-    institution: "Özel Klinik",
-    description:
-      "Yetişkin bireylerle bireysel psikoterapi çalışmaları. Anksiyete, depresyon ve kişilik bozuklukları alanlarında klinik deneyim.",
+    year: "2009 – 2013",
+    institution: "Lise Eğitimi (Beşiktaş Anadolu Lisesi)",
+    description: "",
   },
   {
-    year: "2018 – 2020",
-    institution: "Üniversite Hastanesi",
+    year: "2013 – 2018",
+    institution: "Psikoloji Lisans Eğitimi (Özyeğin Üniversitesi)",
     description:
-      "Psikiyatri servisinde stajyer ve asistan psikolog olarak görev. Değerlendirme ve müdahale süreçlerinde aktif rol.",
+      "Psikolojinin farklı alanlarını tanıma sürecinin başlangıcı; klinik psikolojiye olan ilginin belirginleşmesi.",
   },
   {
-    year: "2016 – 2018",
-    institution: "Yüksek Lisans",
+    year: "2018 – 2021",
+    institution: "Psikoloji Lisans (Üsküdar Üniversitesi)",
     description:
-      "Klinik Psikoloji alanında yüksek lisans eğitimi. Tez çalışması: Yetişkinlerde anksiyete ve baş etme stratejileri.",
+      "Yüksek onur ve onur dereceleriyle mezuniyet. Junior & Parents Clinic ve Naisa Psikolojik Danışmanlık Ofisi'nde staj; psikolojik danışmanlık ve klinik gözlem deneyimi.",
   },
   {
-    year: "2012 – 2016",
-    institution: "Lisans Eğitimi",
+    year: "2022 – 2025",
+    institution: "Klinik Psikoloji Yüksek Lisans (İstanbul Gedik Üniversitesi)",
     description:
-      "Psikoloji lisans programı. Temel psikoloji, klinik psikopatoloji ve araştırma yöntemleri eğitimi.",
+      "Akademik araştırma ve klinik uygulama becerilerinin derinleştirilmesi. Tez: benlik saygısı, sosyal kaygı, bilişsel çarpıtmalar ve duygu düzenleme stratejileri arasındaki ilişki.",
+  },
+  {
+    year: "2023 – 2024",
+    institution: "Bilişsel Psikoloji Stajı",
+    description:
+      "Klinik uygulama deneyiminin genişletilmesi.",
+  },
+  {
+    year: "Kasım 2024 – Şubat 2025",
+    institution: "Online Terapi Vaka Deneyimi",
+    description: "350 saat online terapi süreci deneyimi.",
+  },
+  {
+    year: "Günümüz",
+    institution: "Özel Klinik Çalışma Alanı",
+    description:
+      "Yetişkin danışanlarla psikoterapi süreçleri yürütmeye hazırlanıyor.",
   },
 ];
 
 export const educations = [
   {
-    title: "Bilişsel Davranışçı Terapi Eğitimi",
-    institution: "Türk Psikologlar Derneği",
-    duration: "6 Ay",
-    description:
-      "Yetişkin popülasyonunda BDT uygulamaları, vaka formülasyonu ve müdahale teknikleri üzerine kapsamlı eğitim.",
+    title: "Çocuk Ruh Sağlığı ve Hastalıkları & DSM-5 Eğitim Programı",
+    institution: "",
+    duration: "Nisan - Mayıs 2016",
+    description: "",
   },
   {
-    title: "Şema Terapi Temel Eğitimi",
-    institution: "Uluslararası Şema Terapi Enstitüsü",
-    duration: "4 Ay",
-    description:
-      "Erken dönem uyumsuz şemalar, modlar ve şema terapi teknikleri üzerine temel düzey eğitim.",
+    title: "Psychology Talks",
+    institution: "",
+    duration: "2018",
+    description: "",
   },
   {
-    title: "EMDR Terapi Eğitimi",
-    institution: "EMDR Derneği",
-    duration: "3 Ay",
-    description:
-      "Travma odaklı bilişsel yeniden yapılandırma tekniği. Faz 1 ve Faz 2 eğitimleri tamamlandı.",
+    title:
+      "Rasyonel Duygucu Davranışçı Terapi ve Bilişsel Davranışçı Terapi Eğitimi",
+    institution:
+      "Rational Psychology / Albert Ellis Institute Türkiye Bağlantılı Merkez",
+    duration: "Ağustos 2022 - Nisan 2023",
+    description: "",
   },
   {
-    title: "Kabul ve Kararlılık Terapisi",
-    institution: "Bağlam Psikoloji",
-    duration: "2 Ay",
-    description:
-      "ACT temel prensipleri: kabul, bilişsel ayrışma, değerler ve kararlı eylem üzerine uygulamalı eğitim.",
+    title: "Duygu Odaklı Terapi Eğitimi",
+    institution: "Bahar Akoğlu",
+    duration: "Haziran 2023",
+    description: "",
+  },
+  {
+    title: "Temel Dinamik Psikoterapi Eğitimi",
+    institution: "Prof. Dr. Doğan Şahin",
+    duration: "Ekim 2023 - Nisan 2024",
+    description: "",
+  },
+  {
+    title: "Aktarım Odaklı Psikoterapi Eğitimi",
+    institution: "Prof. Dr. Doğan Şahin",
+    duration: "Aralık 2024 - Haziran 2025",
+    description: "",
+  },
+  {
+    title: "Nevrotiklerde Dinamik Psikoterapi Eğitimi",
+    institution: "Prof. Dr. Doğan Şahin",
+    duration:
+      "Devam ediyor (üst düzey kişilik örgütlenmesi ve nevrotik karakter yapılanmaları odağında)",
+    description: "",
   },
 ];
 
 export const services = [
   {
-    title: "Anksiyete",
-    icon: "brain" as const,
-    image:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+    title: "Anksiyete Bozuklukları",
+    icon: "wind" as const,
+    image: "/images/anksiyete.jpg",
     description:
-      "Kaygı bozuklukları, panik atak ve sosyal anksiyete ile başa çıkma stratejileri geliştirme.",
-    items: ["Panik Bozukluk", "Yaygın Anksiyete", "Sosyal Fobi"],
+      "Yaygın kaygı, panik belirtileri, sosyal kaygı, yoğun endişe ve belirsizliğe tahammülsüzlük.",
   },
   {
-    title: "Depresyon",
-    icon: "heart" as const,
-    image:
-      "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=1200&q=80",
+    title: "Depresif Belirtiler ve Duygudurum Güçlükleri",
+    icon: "sunrise" as const,
+    image: "/images/depresyon.jpg",
     description:
-      "Duygudurum bozuklukları, motivasyon kaybı ve yaşam doyumu konularında destek.",
-    items: ["Majör Depresyon", "Distimi", "Mevsimsel Depresyon"],
+      "Keyifsizlik, motivasyon kaybı, umutsuzluk, değersizlik düşünceleri ve yaşam doyumunda azalma.",
   },
   {
-    title: "İlişki Sorunları",
-    icon: "users" as const,
-    image:
-      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=80",
+    title: "Yeme Bozuklukları ve Yeme Davranışıyla İlgili Güçlükler",
+    icon: "feather" as const,
+    image: "/images/yeme-bozuklugu.jpg",
     description:
-      "İletişim güçlükleri, bağlanma sorunları ve ilişki dinamiklerini anlama.",
-    items: ["Çift Terapisi", "Bağlanma", "İletişim"],
+      "Beden algısı, duygusal yeme, kısıtlama-döngüleri, suçluluk ve kontrol temaları.",
   },
   {
-    title: "Kişilik",
+    title: "Benlik Saygısı ve Öz-Değer Problemleri",
     icon: "sparkles" as const,
-    image:
-      "https://images.unsplash.com/photo-1488953348951-d465fedacbc3?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/benlik-saygisi.jpg",
     description:
-      "Kişilik bozuklukları, öz-değer ve kimlik gelişimi üzerine terapötik çalışma.",
-    items: ["Borderline", "Narsisistik", "Kaçıngan"],
+      "Yetersizlik, değersizlik, kendini sürekli eleştirme, onay ihtiyacı ve başarı üzerinden değer tanımlama.",
+  },
+  {
+    title: "Duygu Düzenleme Güçlükleri",
+    icon: "waves" as const,
+    image: "/images/duygu-duzenleme.jpg",
+    description:
+      "Yoğun duygularla baş etmekte zorlanma, ani tepkiler, bastırma, kaçınma veya duygusal dalgalanmalar.",
+  },
+  {
+    title: "İlişki Problemleri ve Tekrarlayan İlişki Döngüleri",
+    icon: "users" as const,
+    image: "/images/iliski-problemleri.jpg",
+    description:
+      "Romantik ilişkiler, aile ilişkileri, sınır koyma, bağlanma örüntüleri ve kişilerarası çatışmalar.",
+  },
+  {
+    title: "Stres, Uyum Güçlükleri ve Yaşam Geçişleri",
+    icon: "compass" as const,
+    image: "/images/stres-uyum.jpg",
+    description:
+      "Akademik, mesleki, ilişkisel veya kişisel değişim dönemlerinde yaşanan zorlanmalar.",
+  },
+  {
+    title: "Kişilik Örüntüleri ve Kendini Anlama Süreçleri",
+    icon: "fingerprint" as const,
+    image: "/images/kisilik-oruntuleri.jpg",
+    description:
+      "Tekrarlayan davranış kalıpları, ilişki içinde zorlanmalar, içsel çatışmalar ve kişilik yapılanmasına dair farkındalık çalışmaları.",
   },
 ];

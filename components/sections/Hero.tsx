@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { ImageFrame } from "@/components/ui/ImageFrame";
 import { heroText, siteConfig } from "@/lib/constants";
@@ -21,7 +22,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative isolate flex min-h-screen items-center overflow-hidden section-padding pb-24 pt-28 md:pb-20"
+      className="relative isolate flex min-h-[86vh] items-center overflow-hidden section-padding py-14 md:min-h-screen md:pb-20 md:pt-28"
     >
       <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
         <div>
@@ -60,7 +61,7 @@ export function Hero() {
 
           <motion.div
             {...fadeIn(1200)}
-            className="mt-10 flex flex-wrap gap-3 md:mt-12 md:gap-4"
+            className="mt-10 hidden flex-wrap gap-3 md:mt-12 md:flex md:gap-4"
           >
             <a href="#hakkimda" className="btn-primary group">
               Hakkımda
@@ -79,9 +80,51 @@ export function Hero() {
           initial={{ opacity: 0, x: -48 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.85, delay: 0.6, ease }}
-          className="order-last mx-auto mt-2 w-full max-w-[12rem] lg:order-none lg:mt-0 lg:max-w-none"
+          className="order-last mx-auto mt-6 w-[65vw] max-w-[14rem] max-h-[400px] lg:order-none lg:mt-0 lg:w-full lg:max-w-[22rem]"
         >
-          <ImageFrame aspect="hero" label="Profil fotoğrafı" />
+          <ImageFrame aspect="hero" label="Profil fotoğrafı">
+            <Image
+              src="/images/zeynep-profil.jpg"
+              alt="Zeynep Doğruel profil fotoğrafı"
+              fill
+              priority
+              className="object-cover object-top"
+            />
+          </ImageFrame>
+          <motion.div
+            {...fadeIn(1200)}
+            className="mt-6 flex flex-wrap justify-center gap-3 md:hidden"
+          >
+            <a href="#hakkimda" className="btn-primary group">
+              Hakkımda
+              <ArrowDown
+                size={15}
+                className="transition-transform duration-300 group-hover:translate-y-0.5"
+              />
+            </a>
+            <a href="#calisma-alanlari" className="btn-ghost">
+              Çalışma Alanları
+            </a>
+          </motion.div>
+          <motion.a
+            href="#hakkimda"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.45, duration: 0.45 }}
+            className="mt-4 flex flex-col items-center gap-1 pb-2 text-text/55 transition-colors hover:text-text md:hidden"
+            aria-label="Aşağı kaydır"
+          >
+            <span className="text-[10px] leading-none uppercase tracking-[0.25em]">
+              Keşfet
+            </span>
+            <motion.span
+              className="inline-flex items-center justify-center leading-none"
+              animate={{ y: [0, 5, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <ArrowDown size={17} strokeWidth={1.5} />
+            </motion.span>
+          </motion.a>
         </motion.div>
       </div>
 
@@ -90,7 +133,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 0.5 }}
-        className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-text/50 transition-colors hover:text-text"
+        className="absolute bottom-10 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-text/50 transition-colors hover:text-text md:flex"
         aria-label="Aşağı kaydır"
       >
         <span className="text-[10px] uppercase tracking-[0.25em]">Keşfet</span>
